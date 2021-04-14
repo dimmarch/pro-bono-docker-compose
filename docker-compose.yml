@@ -8,9 +8,9 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: password # any random string will do
-      MYSQL_DATABASE: antontut # the name of your mysql database
-      MYSQL_USER: user # the name of the database user
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: antontut
+      MYSQL_USER: user
       MYSQL_PASSWORD: password
   wp:
     build: .
