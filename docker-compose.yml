@@ -13,3 +13,12 @@ services:
       MYSQL_DATABASE: antontut # the name of your mysql database
       MYSQL_USER: user # the name of the database user
       MYSQL_PASSWORD: password
+  wp:
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: user
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: antontut
