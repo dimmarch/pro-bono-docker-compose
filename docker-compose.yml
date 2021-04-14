@@ -3,7 +3,6 @@ services:
   db:
     image: mysql:5.7
     volumes:
-#      - ./database/data:/var/lib/mysql
       - ./database/init:/docker-entrypoint-initdb.d
     restart: always
     ports:
