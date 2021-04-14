@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:5.7
     volumes:
-      - ./database/data:/var/lib/mysql
+#      - ./database/data:/var/lib/mysql
       - ./database/init:/docker-entrypoint-initdb.d
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
   wp:
     build: .
     ports:
-      - "8000:80"
+      - "8888:80"
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: user

@@ -72,4 +72,4 @@ odyssey-keycloak
 
 antontut.ru/*
 database/data/*
-database/init/*
+database/init/antontut.sql
